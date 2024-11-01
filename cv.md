@@ -15,9 +15,11 @@ Junior developer with foundational experience in JavaScript and frameworks like 
 
 - HTML
 - CSS/SASS/Tailwind
-- JavaScript(basic)
+- JavaScript
+- TypeScript
 - React(basic)
 - NextJs(basic)
+- Prisma
 
 ## Code Example
 
