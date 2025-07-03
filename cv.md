@@ -21,3 +21,26 @@ Junior developer with foundational experience in JavaScript and frameworks like 
 - NextJs(basic)
 - Prisma
 - Figma
+
+## Code Example
+
+```
+const expect = (val) => {
+  return {
+    toBe: (value) => {
+      if (val === value) {
+        return true;
+      } else {
+        throw Error('Not Equal');
+      }
+    },
+    notToBe: (value) => {
+      if (val !== value) {
+        return true;
+      } else {
+        throw Error('Equal');
+      }
+    },
+  };
+};
+```
