@@ -44,3 +44,9 @@ const expect = (val) => {
   };
 };
 ```
+
+## Courses
+
+- RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+- RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)
+- [Hexlet](https://ru.hexlet.io/)(Web Development Basics from Hexlet)
