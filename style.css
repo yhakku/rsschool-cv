@@ -208,6 +208,12 @@ body {
   color: #101010;
 }
 
+.container {
+  max-width: 1024px;
+  padding-inline: 24px;
+  margin-inline: auto;
+}
+
 h1,
 .h1 {
   font-family: 'Konstant Gratesk';
