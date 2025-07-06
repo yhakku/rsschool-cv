@@ -232,9 +232,15 @@ h2,
 }
 
 h3,
-h3 {
+.h3 {
   font-size: 1.125rem;
   font-weight: 600;
+}
+
+h4,
+.h4 {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .date {
@@ -290,4 +296,59 @@ p {
 
 .header__menu-link:active {
   color: #ffb800;
+}
+
+/* Footer */
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b1b1b;
+  color: #f8f8f8;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  padding: 10px;
+  color: #f8f8f8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: #ffb800;
+}
+
+.github-link::before {
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-image: url(/rsschool-cv/images/github-logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.2s ease;
+}
+
+.github-link:hover::before {
+  background-image: url(/rsschool-cv/images/github-logo-hover.svg);
+}
+
+.rsschool-link::before {
+  content: '';
+  display: inline-block;
+  width: 56px;
+  height: 20px;
+  background-image: url(/rsschool-cv/images/rs-school-logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.2s ease;
+}
+
+.rsschool-link:hover::before {
+  background-image: url(/rsschool-cv/images/rs-school-logo-hover.svg);
 }
