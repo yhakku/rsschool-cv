@@ -218,15 +218,15 @@ body {
 
 h1,
 .h1 {
-  font-family: 'Konstant Gratesk';
-  font-size: 2.5rem;
+  font-family: 'Konstant Gratesc';
+  font-size: 4rem;
   line-height: 0.8;
   color: #000;
 }
 
 h2,
 .h2 {
-  font-family: 'Konstant Gratesk';
+  font-family: 'Konstant Gratesc';
   font-size: 1rem;
   font-weight: 500;
 }
@@ -351,4 +351,17 @@ p {
 
 .rsschool-link:hover::before {
   background-image: url(/rsschool-cv/images/rs-school-logo-hover.svg);
+}
+
+/* Section */
+
+.section__body {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.section__image {
+  border-radius: 50%;
 }
