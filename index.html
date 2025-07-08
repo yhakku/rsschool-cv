@@ -15,43 +15,236 @@
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Contacts</a>
+              <a class="header__menu-link" href="#contacts">Contacts</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#">About</a>
+              <a class="header__menu-link" href="#about">About</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Skills</a>
+              <a class="header__menu-link" href="#skills">Skills</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Code Example</a>
+              <a class="header__menu-link" href="#code">Code Example</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#">My projects</a>
+              <a class="header__menu-link" href="#projects">My projects</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Education</a>
+              <a class="header__menu-link" href="#education">Education</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link" href="#">Lenguages</a>
+              <a class="header__menu-link" href="#languages">Lenguages</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <section class="section" aria-labelledby="section-title">
-        <div class="section__body container">
+    <main class="grid-columns container">
+      <section class="grid-columns__header section" aria-labelledby="section-title">
+        <div class="section__body">
           <img
             class="section__image"
             src="/rsschool-cv/images/avatar.jpg"
             alt=""
-            width="148"
-            height="148"
+            width="124"
+            height="124"
             loading="lazy"
           />
           <h1 class="section__title" id="section-title">Kargin Yuri, Frontend Developer</h1>
         </div>
+      </section>
+      <section class="grid-columns__sidebar about">
+        <article
+          class="about__inner cv-chapter"
+          aria-labelledby="cv-chapter-title-contacts"
+          id="contacts"
+        >
+          <div class="cv-chapter__item">
+            <div class="cv-chapter__title-inner">
+              <h2 class="cv-chapter__title" id="cv-chapter-title-contacts">Contacts</h2>
+              <span class="cv-chapter__title-number h2">01</span>
+            </div>
+            <div class="cv-chapter__content content">
+              <ul class="content__list">
+                <li class="content__item">
+                  <a class="content__link" href="https://github.com/yhakku" target="_blank"
+                    >github.com/yhakku</a
+                  >
+                </li>
+                <li class="content__item">
+                  <a class="content__link" href="mailto:karginyura@icloud.com" target="_blank"
+                    >karginyura@icloud.com</a
+                  >
+                </li>
+                <li class="content__item">
+                  <a class="content__link" href="tel:+79025897659" target="_blank">+79025897659</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="grid-columns__main about">
+        <article
+          class="about__inner cv-chapter"
+          aria-labelledby="cv-chapter-title-about"
+          id="about"
+        >
+          <div class="cv-chapter__item">
+            <div class="cv-chapter__title-inner">
+              <h2 class="cv-chapter__title" id="cv-chapter-title-about">About me</h2>
+              <span class="cv-chapter__title-number h2">02</span>
+            </div>
+            <div class="cv-chapter__content content">
+              <p class="content__description">
+                Junior developer with foundational experience in JavaScript and frameworks like
+                React and Next.js. I am consistently striving to improve my skills, learn new
+                programming approaches, and deepen my understanding of development. Known for
+                attention to detail and willingness to tackle challenges of varying complexity. I am
+                open to learning and aim to grow professionally within a team where I can develop
+                and contribute meaningfully.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article
+          class="about__inner cv-chapter"
+          aria-labelledby="cv-chapter-title-skills"
+          id="skills"
+        >
+          <div class="cv-chapter__item">
+            <div class="cv-chapter__title-inner">
+              <h2 class="cv-chapter__title" id="cv-chapter-title-skills">Skills</h2>
+              <span class="cv-chapter__title-number h2">03</span>
+            </div>
+            <div class="cv-chapter__content content">
+              <ul class="content__list">
+                <li class="content__item">HTML</li>
+                <li class="content__item">CSS / SASS / Tailwind</li>
+                <li class="content__item">JavaScript</li>
+                <li class="content__item">Git / GitHub</li>
+                <li class="content__item">React (basic)</li>
+                <li class="content__item">Next.js (basic)</li>
+                <li class="content__item">Prisma</li>
+                <li class="content__item">Figma</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="about__inner cv-chapter" aria-labelledby="cv-chapter-title-code" id="code">
+          <div class="cv-chapter__item">
+            <div class="cv-chapter__title-inner">
+              <h2 class="cv-chapter__title" id="cv-chapter-title-code">Code Example</h2>
+              <span class="cv-chapter__title-number h2">04</span>
+            </div>
+            <div class="cv-chapter__content content">
+              <pre><code class="content__code-example">const expect = (val) => {
+  return {
+    toBe: (value) => {
+      if (val === value) {
+        return true;
+      } else {
+        throw Error('Not Equal');
+      }
+    },
+    notToBe: (value) => {
+      if (val !== value) {
+        return true;
+      } else {
+        throw Error('Equal');
+      }
+    },
+  };
+};</code></pre>
+            </div>
+          </div>
+        </article>
+        <article
+          class="about__inner cv-chapter"
+          aria-labelledby="cv-chapter-title-projects"
+          id="projects"
+        >
+          <div class="cv-chapter__item">
+            <div class="cv-chapter__title-inner">
+              <h2 class="cv-chapter__title" id="cv-chapter-title-projects">My projects</h2>
+              <span class="cv-chapter__title-number h2">05</span>
+            </div>
+            <div class="cv-chapter__content content">
+              <ul class="content__list">
+                <li class="content__item">
+                  <a
+                    class="content__link"
+                    href="https://yhakku.github.io/rsschool-cv"
+                    target="_blank"
+                    >rsschool-cv</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article
+          class="about__inner cv-chapter"
+          aria-labelledby="cv-chapter-title-education"
+          id="education"
+        >
+          <div class="cv-chapter__item">
+            <div class="cv-chapter__title-inner">
+              <h2 class="cv-chapter__title" id="cv-chapter-title-education">
+                Education and courses
+              </h2>
+              <span class="cv-chapter__title-number h2">06</span>
+            </div>
+            <div class="cv-chapter__content content">
+              <ul class="content__list">
+                <li class="content__item">
+                  <span class="date"><time datetime="2024-09-01">2024.09 - 2024.09</time></span>
+                  <a class="content__link h3" href="https://ru.hexlet.io/" target="_blank">
+                    Hexlet (Web Development Basics)
+                  </a>
+                </li>
+                <li class="content__item">
+                  <span class="date"><time datetime="2024-10-07">2024.10</time> - Present</span>
+                  <a
+                    class="content__link h3"
+                    href="https://rs.school/courses/javascript-ru"
+                    target="_blank"
+                  >
+                    RS School Stage 1 (in progress)
+                  </a>
+                </li>
+                <li class="content__item">
+                  <span class="date"><time datetime="2025-06-30">2025.06</time> - Present</span>
+                  <a
+                    class="content__link h3"
+                    href="https://rs.school/courses/javascript-preschool-ru"
+                    target="_blank"
+                  >
+                    RS School Stage 0 (in progress)
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article
+          class="about__inner cv-chapter"
+          aria-labelledby="cv-chapter-title-languages"
+          id="languages"
+        >
+          <div class="cv-chapter__item">
+            <div class="cv-chapter__title-inner">
+              <h2 class="cv-chapter__title" id="cv-chapter-title-languages">Languages</h2>
+              <span class="cv-chapter__title-number h2">07</span>
+            </div>
+            <div class="cv-chapter__content content">
+              <ul class="content__list">
+                <li class="content__item">English - B1</li>
+                <li class="content__item">Russian - Native</li>
+              </ul>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
     <footer class="footer">
