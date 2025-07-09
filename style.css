@@ -208,6 +208,9 @@ svg * {
 /* Global styles */
 
 body {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
   font-family: 'Inter';
   color: #101010;
 }
@@ -215,7 +218,6 @@ body {
 .container {
   max-width: 1024px;
   padding-inline: 24px;
-  margin-inline: auto;
 }
 
 h1,
@@ -266,6 +268,7 @@ p {
   top: 0;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2.5px);
+  z-index: 1;
 }
 
 .header__menu-list {
@@ -418,10 +421,12 @@ p {
 /* About grid__columns */
 
 .grid-columns {
+  position: relative;
   display: grid;
   grid-template-areas: 'sidebar header' 'sidebar main';
   grid-template-columns: 1fr 2fr;
   column-gap: 30px;
+  overflow: hidden;
 }
 
 .grid-columns__header {
@@ -439,4 +444,28 @@ p {
 .grid-columns__main {
   grid-area: main;
   padding-bottom: 60px;
+}
+
+/* BG */
+
+.background-sun {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  transform: translate(-45%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, #ffb800 10%, transparent 70%);
+  z-index: -2;
+  pointer-events: none;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url(/rsschool-cv/images/grain.png);
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: -2;
 }
