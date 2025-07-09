@@ -421,16 +421,19 @@ p {
   display: grid;
   grid-template-areas: 'sidebar header' 'sidebar main';
   grid-template-columns: 1fr 2fr;
+  column-gap: 30px;
 }
 
 .grid-columns__header {
   grid-area: header;
-  padding-block: 30px 60px;
+  padding-block: 50px 60px;
 }
 
 .grid-columns__sidebar {
   grid-area: sidebar;
-  padding-block: 30px;
+  grid-template-columns: 1fr;
+  padding-block: 50px;
+  gap: 0;
 }
 
 .grid-columns__main {
