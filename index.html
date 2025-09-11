@@ -133,16 +133,16 @@
               <span class="cv-chapter__title-number h2">04</span>
             </div>
             <div class="cv-chapter__content content">
-              <pre><code class="content__code-example">const expect = (val) => {
+              <pre><code class="content__code-example">const expect = (val) =&gt; {
   return {
-    toBe: (value) => {
+    toBe: (value) =&gt; {
       if (val === value) {
         return true;
       } else {
         throw Error('Not Equal');
       }
     },
-    notToBe: (value) => {
+    notToBe: (value) =&gt; {
       if (val !== value) {
         return true;
       } else {
